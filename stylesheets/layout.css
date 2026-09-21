@@ -1,6 +1,9 @@
 * {
   box-sizing: border-box;
 }
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -64,4 +67,28 @@ img {
   width: 1024px;
   margin: 30px auto;
   display: block;
+}
+ol {
+  padding-left: 30px;
+  list-style-type: decimal;
+}
+ul {
+  padding-left: 30px;
+  list-style-type: square;
+}
+li {
+  margin: 8px 0;
+}
+blockquote {
+  font-style: italic;
+  position: relative;
+}
+blockquote::before {
+  position: absolute;
+  content: "";
+  width: 3px;
+  height: 100%;
+  background-color: black;
+  top: 0;
+  left: -16px;
 }
